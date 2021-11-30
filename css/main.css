@@ -13,7 +13,19 @@ body {
     margin: 0;
 }
 
-#Header {}
+hr {
+    margin-bottom: 1vh;
+}
+
+h1 {
+    margin: 1vh 0;
+    font: bold 2.7em;
+}
+
+#Header {
+    padding: 15px 15px 15px 10%;
+    background: black;
+}
 
     #Header a {
         text-align: center;
@@ -21,7 +33,7 @@ body {
         letter-spacing: 3px;
         color: #FFF;
         font-size: 1.2em;
-        margin-left: 1.5vw;
+        margin-right: 1.5vw;
         margin-top: 2vh;
     }
 
@@ -35,9 +47,15 @@ body {
     bottom: 0;
 }
 
-.overlay {
-    padding: 15px;
-    background: black;
+.page_content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #gameCanvas {
@@ -54,145 +72,45 @@ body {
     z-index: -1;
 }
 
-
-.flex-container {
+.flex_container {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: flex-start;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    border: 2px solid black;
+    
 }
 
-.flex-item {
+.flex_item {
     background-color: blue;
+    background-size: cover;
     width: 380px;
     height: 210px;
     margin: 10px;
     text-align: center;
     border: 2px solid black;
-}
-/*
-canvas {
-    width: 768px;
-    position: absolute;
-    top: 10%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    text-align: center;
-    background: #262626;
-    z-index: -1;
-    border: 2px solid #FF5900;
+    border-radius: 10px;
 }
 
-#Intro {
-    color: #FFF;
-    padding: 8px;
-    background: rgba(1, 1, 1, 0.5);
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-    display: inline-block;
+.img_container {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#info {
-    color: #FFF;
-    padding: 8px;
-    background: rgba(1, 1, 1, 0.5);
-    margin-top: 5vh;
-    display: inline-block;
-    border: 2px solid white;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
-}
-
-h1 {
-    font-size: 4em;
-    margin: 1vh 0;
-    color: white;
-}
-
-h2 {
-    color: white;
-    font-size: 2em;
-}
-
-h3 {
-    font-size: 2em;
-}
-
-#ButtonsContainer {
-    margin: 5vh 0.5vw;
-}
-
-.btntabs, .btnhide {
-    color: #FFF;
-    background: rgba(0,0,0,0);
-    padding: 15px;
-    border: 3px solid #FFF;
-    display: inline-block;
-    transition: all 0.4s ease 0s;
-    font-size: 1.2em;
-    letter-spacing: 3px;
-}
-
-    .btntabs:hover {
-        color: #ffffff !important;
-        background: #ff2701;
-        border-color: #ff2701 !important;
-        transition: all 0.4s ease 0s;
-    }
-
-.btnhide {
-    border-radius: 50%;
-    width: 7vw;
-    height: 7vw;
-}
-
-    .btnhide:hover {
-        color: #ffffff !important;
-        background: #01ffae;
-        border-color: #01ffae !important;
-        transition: all 0.4s ease 0s;
-    }
-
-
-
-#tooltip {
-    bottom: 0;
-    display: none;
-    position: fixed;
+.item_overlay {
+    height: 100%;
     width: 100%;
-    text-align: center;
-    margin-bottom: 2vh;
-    color: white;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -o-user-select: none;
+    opacity: 0;
+    transition: .5s ease;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9);
 }
 
-#TextContainer {
-    background-color: rgba(0,0,0,0.7);
-    width: 100%;
-    height: 500vh;
-    top: 0;
-    position: absolute;
+.content:hover .item_overlay {
+    opacity: 1;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-
-    */

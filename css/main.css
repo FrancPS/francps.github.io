@@ -18,8 +18,16 @@ hr {
 }
 
 h1 {
-    margin: 1vh 0;
+    padding: 1vh 0;
     font: bold 2.7em;
+}
+
+h2 {
+    font: bold 2em;
+}
+
+h3 {
+    font-size: 1em;
 }
 
 #Header {
@@ -75,13 +83,14 @@ h1 {
 .flex_container {
     display: flex;
     flex-wrap: wrap-reverse;
+    flex-direction:row-reverse;
     justify-content: center;
     align-items: flex-start;
     
 }
 
 .flex_item {
-    background-color: blue;
+    background-color: black;
     background-size: cover;
     width: 380px;
     height: 210px;
@@ -107,6 +116,10 @@ h1 {
     border-radius: 10px;
     background-color: rgba(255,255,255,0.9);
 }
+
+    .item_overlay p {
+        margin: 10px;
+    }
 
 .content:hover .item_overlay {
     opacity: 1;

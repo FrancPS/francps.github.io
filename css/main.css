@@ -1,0 +1,198 @@
+﻿html {
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(#071014, #203A43, #071014);
+    color: white;
+}
+
+* {
+    margin: 0;
+}
+
+#Header {}
+
+    #Header a {
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 3px;
+        color: #FFF;
+        font-size: 1.2em;
+        margin-left: 1.5vw;
+        margin-top: 2vh;
+    }
+
+        #Header a:hover {
+            color: #01ffae;
+            transition: all 0.4s ease 0s;
+            cursor: pointer;
+        }
+
+#Footer {
+    bottom: 0;
+}
+
+.overlay {
+    padding: 15px;
+    background: black;
+}
+
+#gameCanvas {
+    display: block;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: black;
+    border: 2px solid white;
+    z-index: -1;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.flex-item {
+    background-color: blue;
+    width: 380px;
+    height: 210px;
+    margin: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
+/*
+canvas {
+    width: 768px;
+    position: absolute;
+    top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #262626;
+    z-index: -1;
+    border: 2px solid #FF5900;
+}
+
+#Intro {
+    color: #FFF;
+    padding: 8px;
+    background: rgba(1, 1, 1, 0.5);
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    display: inline-block;
+}
+
+#info {
+    color: #FFF;
+    padding: 8px;
+    background: rgba(1, 1, 1, 0.5);
+    margin-top: 5vh;
+    display: inline-block;
+    border: 2px solid white;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 1vh 0;
+    color: white;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+#ButtonsContainer {
+    margin: 5vh 0.5vw;
+}
+
+.btntabs, .btnhide {
+    color: #FFF;
+    background: rgba(0,0,0,0);
+    padding: 15px;
+    border: 3px solid #FFF;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    font-size: 1.2em;
+    letter-spacing: 3px;
+}
+
+    .btntabs:hover {
+        color: #ffffff !important;
+        background: #ff2701;
+        border-color: #ff2701 !important;
+        transition: all 0.4s ease 0s;
+    }
+
+.btnhide {
+    border-radius: 50%;
+    width: 7vw;
+    height: 7vw;
+}
+
+    .btnhide:hover {
+        color: #ffffff !important;
+        background: #01ffae;
+        border-color: #01ffae !important;
+        transition: all 0.4s ease 0s;
+    }
+
+
+
+#tooltip {
+    bottom: 0;
+    display: none;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2vh;
+    color: white;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#TextContainer {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 500vh;
+    top: 0;
+    position: absolute;
+}
+
+
+    */

@@ -8,11 +8,13 @@
 </head>
 <body>
     <div id="Header">
+        <a onclick="window.location.href='index.html'">&lt;&lt; HOME</a>
         <a onclick="window.location.href='projects.html'">PROJECTS</a>
         <a onclick="window.location.href='about.html'">ABOUT ME</a>
     </div>
 
     <div class="content_handler">
+
         <canvas id="gameCanvas">
         </canvas>
     </div>
@@ -31,5 +33,14 @@
             </div>
         </div>
     </div>
+
+    <script>
+        var canvas = document.getElementById("gameCanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.font = "10px Arial";
+        ctx.fillStyle = "white";
+        ctx.fillText("Special Presentation Under Development", 50, 50);
+    </script>
+
 </body>
 </html>

@@ -15,15 +15,18 @@ body {
 
 hr {
     margin-bottom: 1vh;
+    color: #00bdff;
 }
 
 h1 {
     padding: 1vh 0;
     font: bold 2.7em;
+    color: #00bdff;
 }
 
 h2 {
     font: bold 2em;
+    color: #05bbfa;
 }
 
 h3 {
@@ -94,13 +97,20 @@ a:hover {
     left: 0;
     right: 0;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px solid #203A43;
     border-radius: 50px;
 }
 
     .page_content .content_text{
         padding: 50px;
     }
+
+        .page_content .content_text .flex p {
+            font-size: 1.2em;
+            line-height: 1.3em;
+            font-family: Arial, sans-serif;
+        }
 
     .page_content .flex {
         display: flex;

@@ -123,16 +123,14 @@ a:hover {
             padding: 1%;
         }
 
-#gameCanvas {
-    display: block;
-    width: 70%;
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+.content_handler{
     text-align: center;
-    background: black;
+}
+
+#gameCanvas {
+    width: 1280px;
+    height: 720px;
+    margin-top: 20px;
     border: 2px solid white;
     z-index: -1;
 }

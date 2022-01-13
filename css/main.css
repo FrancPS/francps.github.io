@@ -20,17 +20,15 @@ hr {
 
 h1 {
     padding: 1vh 0;
-    font: bold 2.7em;
     color: #00bdff;
 }
 
 h2 {
-    font: bold 2em;
     color: #05bbfa;
 }
 
-h3 {
-    font-size: 1em;
+a {
+    color: #05bbfa;
 }
 
 a:hover {
@@ -154,6 +152,10 @@ a:hover {
     border: 2px solid black;
     border-radius: 10px;
 }
+
+    .flex_item a {
+        text-decoration: none;
+    }
 
 .img_container {
     height: 100%;

@@ -1,6 +1,74 @@
-// Initialise canvas variables
-var canvas;
-var ctx;
+
+window.addEventListener("load", function (event) {
+    "use strict";
+
+    ////////////////
+    // FUNCTIONS  //
+    ////////////////
+
+    var render = function () {
+        display.clearBuffer(game.world.backgroundColor);
+        display.drawRectangle(game.world.player.x, game.world.player.y, game.world.player.width, game.world.player.height, game.world.player.color);
+        display.drawText(game.world.player.x, game.world.player.y, "I'm on my path to be a Game!", "white");
+        display.render();
+    }
+
+    var update = function () {
+        if (controller.left.active) { game.world.player.moveLeft(); };
+        if (controller.right.active) { game.world.player.moveRight(); };
+        if (controller.up.active) { game.world.player.jump(); controller.up.active = false; };
+        game.update();
+    }
+
+    var keyDownUp = function (event) {
+        controller.keyDownUp(event.type, event.key);
+    };
+
+    var resize = function (event) { }
+
+    ////////////////
+    //  OBJECTS   //
+    ////////////////
+
+    /* The controller handles user input */
+    var controller = new Controller();
+
+    /* The display handles window resizing, and the on-screen canvas. */
+    var display = new Display(document.querySelector("#gameCanvas"));
+
+    /* The game holds all the game logic. */
+    var game = new Game();
+
+    /* Te engine is where the previous elements interact. */
+    var engine = new Engine(1000 / 30, render, update);
+
+
+
+    ////////////////
+    // INITIALIZE //
+    ////////////////
+
+    // Scale the graphic canvas to the
+    display.buffer.canvas.width = game.world.width;
+    display.buffer.canvas.height = game.world.height;
+
+    window.addEventListener("resize", resize);
+    window.addEventListener("keydown", keyDownUp);
+    window.addEventListener("keyup", keyDownUp);
+
+    display.resize();
+    engine.start();
+});
+
+
+
+
+
+
+
+
+/*
+
 
 // Initialise input variables
 var upKey;
@@ -16,7 +84,6 @@ var worldElements = [];
 window.onload = function() {
     // Assign canvas and context variables
     canvas = document.getElementById("gameCanvas");
-    ctx = canvas.getContext("2d");
     ctx.font = "20px Courier New";
 
     // Setup key input listeners
@@ -26,6 +93,7 @@ window.onload = function() {
     player = new Player(100, 400);
 
     // Create world elements
+    // TO ARRANGE: 1 tile = 40x40
     for (let i = 0; i < 6; ++i) {
         worldElements.push(new WorldElement(0+100*i, 620, 100, 100, 1))
     }
@@ -98,3 +166,4 @@ function checkIntersection(r1, r2) {
         return true;
     }
 }
+*/

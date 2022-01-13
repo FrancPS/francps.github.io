@@ -1,14 +1,18 @@
-function Player(x, y) {
+const Player = function (x, y) {
     this.x = x;
     this.y = y;
     this.width = 50;
     this.height = 100;
-    this.xVelocity = 0;
-    this.yVelocity = 0;
-    this.maxXVelocity = 10;
-    this.friction = 0.6;
-    
-    this.active = true;
+    this.velocityX = 0;
+    this.velocityY = 0;
+    this.acceleration = 2;
+    this.jumping = true;
+    this.jumpPower = 50;
+
+    this.color = "green"; //TODO: replace with sprites
+
+
+    /*this.active = true;
 
     this.step = function () {
         // Movement
@@ -79,14 +83,27 @@ function Player(x, y) {
                 }
             }
 
-            // Update position
-            this.x += this.xVelocity;
-            this.y += this.yVelocity;
         }
-    }
+    };
+*/
+};
 
-    this.draw = function() {
-        ctx.fillStyle = "green";
-        ctx.fillRect(this.x, this.y, this.width, this.height);
+Player.prototype = {
+
+    constructor: Player,
+
+    jump: function () {
+        if (!this.jumping) {
+            this.jumping = true;
+            this.velocityY -= this.jumpPower;
+        }
+    },
+
+    moveLeft: function () { this.velocityX -= this.acceleration; },
+    moveRight: function () { this.velocityX += this.acceleration; },
+
+    update: function () {
+        this.x += this.velocityX;
+        this.y += this.velocityY;
     }
-}
+};

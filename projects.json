@@ -1,0 +1,65 @@
+{
+  "2D SPACE SHOOTER": {
+    "title": "2D Space Shooter",
+    "release": "(GameMaker - 2017)",
+    "descr": "Final Project for Videogames Design and Development course at Deusto School.",
+    "showURL": "GameMakerSpaceShooter.png",
+    "projectURL": "https://github.com/FrancPS/Deusto-Space-Shooter/releases/tag/v1.0"
+  },
+  "ZORK": {
+    "title": "ZORK!",
+    "release": "(C++ - 2020)",
+    "descr": "Master's degree admission test. A classical text-based RPG adventure. Will you be able to escape the house?",
+    "showURL": "Zork.png",
+    "projectURL": "https://github.com/FrancPS/ZORK/releases/tag/v1.0"
+  },
+  "TESSERACT": {
+    "title": "TESSERACT ENGINE",
+    "release": "(C++ - 2020)",
+    "descr": "Fully fledged 3D Engine created in my Master's degree. (Includes all the features that one would expect from a professional Engine!).",
+    "showURL": "Tesseract.gif",
+    "projectURL": "https://github.com/PenteractStudios/Tesseract"
+  },
+  "SHUTDOWN": {
+    "title": "SHUTDOWN",
+    "release": "(Tesseract Engine (C++) - 2021)",
+    "descr": "Master's degree final project. A twin-stick shooter game with an innovative character-swapping mechanic.",
+    "showURL": "ShutDown.gif",
+    "projectURL": "https://github.com/PenteractStudios/Penteract/releases/tag/0.2.0-gold"
+  },
+  "MOBILE SPACE SHOOTER": {
+    "title": "3D SPACE SHOOTER",
+    "release": "(Unity - 2021)",
+    "descr": "A classic space shooter created with Unity. Exercise on Pools, Persistent data and Leaderboards.",
+    "showURL": "MobileSpaceShooter.gif",
+    "projectURL": "https://github.com/FrancPS/SpaceShooterMobile/releases/tag/v1.0"
+  },
+  "GOYA'S NIGHTMARE": {
+    "title": "Goya's Nightmare",
+    "release": "(Unity - 2022)",
+    "descr": "IV Cultura Abierta GameJam. A Slenderman-type game based on the art of Goya's 'Dark Paintings'. FEAR THE CULTURE!",
+    "showURL": "GoyasNightmare.png",
+    "projectURL": "https://franc-porta.itch.io/goyas-nightmare"
+  },
+  "FOREST MASNION": {
+    "title": "Forest Mansion",
+    "release": "(Unity - 2022)",
+    "descr": "A small puzzle platformer game with DonkeyKong mechanics but cute environ. A Unity's 2D mode exercise made in 4 days. ",
+    "showURL": "ForestMansion.gif",
+    "projectURL": "https://github.com/FrancPS/ForestMansion/releases/tag/v1.0.0"
+  },
+  "UGLY": {
+    "title": "Ugly",
+    "release": "(Unity - 2023)",
+    "descr": "My first professional project! A 2D puzzle-platformer with an innovative Mirror mechanic. Releases on Steam, NSwitch and XBox.",
+    "showURL": "Ugly.gif",
+    "projectURL": "https://store.steampowered.com/app/1983220/Ugly/"
+  },
+  "ZITRO": {
+    "title": "Zitro",
+    "release": "(Irrlicht (C++) - 2024)",
+    "descr": "In my time at Zitro, our team focused on developing slots games such as Pearl's Paradise, Fairyland Quest, Merging Fu Pots, OctoGold among many others.",
+    "showURL": "Zitro.jpg",
+    "projectURL": "https://zitrogames.com/es/"
+  }
+}

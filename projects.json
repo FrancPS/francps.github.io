@@ -61,5 +61,26 @@
     "descr": "In my time at Zitro, our team focused on developing slots games such as Pearl's Paradise, Fairyland Quest, Merging Fu Pots, OctoGold among many others.",
     "showURL": "Zitro.jpg",
     "projectURL": "https://zitrogames.com/es/"
+  },
+  "OVERGROW": {
+    "title": "(Don't) Overgrow",
+    "release": "(Unity - 2025)",
+    "descr": "Spring 2D Jam '25. A cozy resource management game, with 'Spring' and 'Overgrow' as the keywords for the jam. MAINTAIN THE BALANCE!",
+    "showURL": "Overgrow.png",
+    "projectURL": "https://franc-porta.itch.io/dont-overgrow"
+  },
+  "DND": {
+    "title": "D&D - WiP",
+    "release": "(Godot - 202X)",
+    "descr": "My long-life dream project. A port to videogames of the classic Parker's tabletop RPG 'Dungeons&Dragons' kids version.",
+    "showURL": "DnD.mp4",
+    "projectURL": "https://github.com/FrancPS/DnD"
+  },
+  "LEARNGL": {
+    "title": "LearnGL - WiP",
+    "release": "(C++ - 2025)",
+    "descr": "A revision exercise on rendering pipelines, following the amazing learnGL.com tutorials.",
+    "showURL": "learnGL.jpg",
+    "projectURL": "https://github.com/FrancPS/learnGL"
   }
 }
